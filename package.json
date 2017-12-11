@@ -10,7 +10,7 @@
     "license": "MIT",
     "dependencies": {
         "koa": "^2.4.1",
-        "node-eagle": "^0.1.1"
+        "node-eagle": "^0.1.3"
     },
     "devDependencies": {}
 }

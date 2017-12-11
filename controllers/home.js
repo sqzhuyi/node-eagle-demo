@@ -3,16 +3,17 @@ module.exports = {
         scope.content = 'home body';
     },
     async about(scope){
+        let ctx = this;
         var data = {
             'company': 'Google',
             'contact': '400-110-110'
         };
-        scope.content = data[this.params.id];
+        scope.content = data[ctx.get('id')];
         if(!scope.content){
-            this.status = 404;
+            ctx.status = 404;
         }
     },
     async siteMap(scope){
-
+        await this.render('map');
     }
 };
