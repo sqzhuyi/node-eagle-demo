@@ -1,0 +1,16 @@
+{
+    "name": "node-eagle-demo",
+    "version": "0.1.0",
+    "description": "基于Node的高性能MVC框架-demo",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js",
+        "debug": "node --inspect app.js"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "koa": "^2.4.1",
+        "node-eagle": "^0.1.0"
+    },
+    "devDependencies": {}
+}
