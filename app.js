@@ -4,7 +4,7 @@ const app = new Koa();
 const eagle = require("node-eagle");
 const config = require("./config");
 
-eagle(app, config);
+eagle(Koa, config);
 
 app.listen(config.port, config.host, function(){
     console.log(`app start at ${config.host}:${config.port}`);
