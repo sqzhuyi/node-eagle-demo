@@ -8,6 +8,7 @@ module.exports = {
 
     },
     async index(scope){
+        this.cache = 30;
         scope.content = 'home body';
 
         // 为单个action注册事件-
