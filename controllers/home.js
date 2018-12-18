@@ -8,8 +8,9 @@ module.exports = {
 
     },
     async index(scope){
-        this.cache = 30;
+        this.cache = 5;
         scope.content = 'home body';
+        scope.now = +new Date;
 
         // 为单个action注册事件-
         this.onRenderComplete = async function(scope){
